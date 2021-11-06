@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,900;1,400;1,700&family=Vollkorn:ital,wght@0,400;0,600;0,700;1,400;1,800&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    font-family: 'Vollkorn', serif;
+}
+
+
+
+
+
+
+body{
+    background-color: #151515;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.show{
+    display: block  !important;
+}
+.delay1{
+    animation-delay: 0.3s;
+    
+}
+.delay2{
+    animation-delay: 0.5s;
+    
+}
+.delay3{
+    animation-delay: 0.7s;
+    
+}
+.delay4{
+    animation-delay: 0.9s;
+    
+}
+
+
+
+
+
+
+/* navigation */
+.nnam{
+    display: flex;
+    justify-content: flex-end !important;
+}
+#navi{
+    background-color:#151515!important;
+}
+.act{
+    border-bottom: 2px solid #49fb35;
+   
+}
+.btn:focus, a:focus
+{
+         outline: none;
+         box-shadow: none;
+}
+.navbar-toggler:focus
+{
+         outline: none !important;
+         box-shadow: none;
+}
+.nav-link:hover{
+    font-size: 18px;
+  
+}
+
+.site-nav-scroll{
+    background-color:rgb(248, 241, 241) !important;
+    position: fixed;
+    z-index: 2003;
+    width: 100%;
+    
+}
+
+/* navigation end */
+/* home */
+.profile{
+  width: 300px;
+  height: auto;
+  
+}
+
+
+/* home-end */
+
+/* about me */
+#aboutme{
+    background-image: repeating-linear-gradient(112.5deg, #151515 0px, #151515 20px,transparent 20px, transparent 21px),repeating-linear-gradient(0deg, #151515 0px, #151515 20px,transparent 20px, transparent 21px),linear-gradient(90deg, hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%),hsl(117,53%,60%));
+    height: 100vh;
+
+}
+/* about me end */
+
+
+/* skill */
+
+
+.three-btn:hover{
+  color: white !important;
+}
+.three-btn:active{
+    color: white !important;
+    background-color: #49fb35 !important;
+  }
+  .three-btn:focus{
+    color: white !important;
+    background-color: #49fb35 !important;
+  }
+  
+/* skill end*/
+
+
+/* sample */
+.work-show{
+    column-count: 3;
+    column-width: 30%;
+
+
+}
+.work-show-img{
+    width: 80%;
+}
+.work-show-img:hover{
+ transform: scale(1.05);
+ transition: 0.4s;
+}
+/* sample-end */
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    .nnam{
+        display: flex;
+        justify-content: center!important;
+    }
+    .profile{
+        width: fit-content;
+    }
+    .work-show{
+        column-count: 1;
+       column-width: 100%;
+      
+    
+    }
+    .work-show-img{
+        width: 80%;
+    }
+}
